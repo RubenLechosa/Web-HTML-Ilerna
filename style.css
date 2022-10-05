@@ -1,58 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Montserrat',
+        sans-serif;   
 }
 
-.logo {
-    float: left;
-    display: inline-block;
-    margin-top: 1%;
+body{
+    background: linear-gradient(to bottom, white, grey, white);
 }
 
-#navigation-container {
-    width: 1200px;
-    margin: 0 auto;
-    height: 70px;
-}
-
-.navigation-bar {
-    background: linear-gradient(to bottom, grey, white);
-    height: 120px;
-    width: 100%;
-}
-
-.navigation-bar ul {
-    padding: 0px;
-    margin: 0px;
-    margin-left: 30%;
-    display: inline-block;
-    margin-top: 2% !important;
-}
-
-.navigation-bar li {
-    list-style-type: none;
-    padding: 0px;
-    height: 24px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    display: inline;
-}
-
-.navigation-bar li a {
-    color: black;
-    font-size: 16px;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+a {
     text-decoration: none;
-    line-height: 70px;
-    padding: 5px 15px;
-    opacity: 0.7;
 }
 
-#menu {
-    float: right;
+li {
+    list-style: none;
+}
+
+/*NavBar y Footer*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+
+.nav-links a {
+    color: black;
+    transition: background-color 5s ease-out 100ms
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.9s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.services {
+    position: relative;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: grey;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    #login {
+        border: 2px solid transparent;
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+
+
+    .menu li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
 }
 
 footer {
@@ -64,7 +119,6 @@ footer {
     width: 100%;
     padding-top: 40px;
     color: #fff;
-    margin-top: 10%;
 }
 
 .footer-content {
@@ -121,10 +175,243 @@ footer {
 }
 
 .socials a:hover i {
-    color: aqua;
+    color: grey;
 }
 
 #login {
     border: 2px solid black;
     border-radius: 25px;
+    padding: 10px;
+}
+
+/*Fin NavBar y Footer*/
+
+/*Contacto*/
+
+.background {
+    display: flex;
+    min-height: 100vh;
+    margin-bottom: -10%;
+}
+
+.container {
+    flex: 0 1 700px;
+    margin-top: 7%;
+    margin-left: 30%;
+    padding: 10px;
+}
+
+.screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+    margin-right: auto;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+
+.screen-header-button.close {
+    background: red;
+}
+
+.screen-header-button.maximize {
+    background: yellow;
+}
+
+.screen-header-button.minimize {
+    background: green;
+}
+
+.screen-header-right {
+    display: flex;
+}
+
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #fff;
+}
+
+.app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+}
+
+.info-tienda {
+    margin-top: 7%;
+    color: #fff;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-top: 40px;
+}
+
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+    color: #666;
+}
+
+.app-form-control:focus {
+    border-bottom-color: #ddd;
+}
+
+.app-form-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-form-button:hover {
+    color: grey;
+}
+
+
+@media screen and (max-width: 520px) {
+    .screen-body {
+        flex-direction: column;
+    }
+
+    .screen-body-item.left {
+        margin-bottom: 30px;
+    }
+
+    .app-title {
+        flex-direction: row;
+    }
+
+    .app-title span {
+        margin-right: 12px;
+    }
+
+    .app-title:after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .screen-body {
+        padding: 40px;
+    }
+
+    .screen-body-item {
+        padding: 0;
+    }
+}
+
+/*Fin Contacto*/
+
+/*Carta*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+.carta{
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+th{
+    font-size: 20px;
 }

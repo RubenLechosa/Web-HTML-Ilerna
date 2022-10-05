@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,78 @@
     <title>IL·NONNO - Contacto</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9ddb4510e0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-    <header>
-        <div class="navigation-bar">
-            <div id="navigation-container">
-                <a href="index.html"><img src="assets/logo.png" width="15%" class="logo"></a>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="carta.html">Nuestra Carta</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="contacto.html"><b>Contacto</b></a></li> 
-                    <li><a id="login" href="login.html">Login</a></li>
-                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
-                </ul>
-            </div>
-    </header>
 
-    <section>
-        <form action="">
-            <h1>Formulario de Contacto</h1>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" maxlength="20">
-            <br>
-            <label for="email">Email</label>
-            <input id="email" type="email">
-            <br>
-            <label for="asunto">Asunto</label>
-            <input id="asunto" type="text" maxlength="20">
-            <br>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
-            <br>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" width=40%" class="logo"></a>
+        </div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html">Nuestra Carta</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html"><b>Contacto</b></a></li>
+                <li><a id="login" href="login.html">Login</a></li>
+                <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="background">
+        <div class="container">
+            <div class="screen">
+                <div class="screen-header">
+                    <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                    </div>
+                    <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                    </div>
+                </div>
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>CONTACTA CON NOSOTROS</span>
+                        </div>
+                        <div class="info-tienda">
+                            <span>AV Lleida 69, Torrefarrera 25123</span> <br>
+                            <span>635539740</span>
+                        </div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="Nombre">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="Email">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="Telefono">
+                            </div>
+                            <div class="app-form-group message">
+                                <textarea class="app-form-control" placeholder="Mensaje" name="" id="" cols="10" rows="4"></textarea>
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -65,4 +102,5 @@
 
 
 </body>
+
 </html>
