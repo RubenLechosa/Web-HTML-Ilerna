@@ -9,7 +9,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, white, grey, white);
+    background: linear-gradient(to bottom, white, #eee, white);
 }
 
 a {
@@ -183,13 +183,13 @@ footer {
     padding: 12px;
     background-color: #4d4d4f;
     color: white;
+
 }
 
 #login:hover {
     border-radius: 25px;
     padding: 12px;
-    background: linear-gradient(to bottom, grey, white, grey);
-    color: #4d4d4f;
+    color: white;
     font-weight: bold;
 }
 
@@ -550,9 +550,9 @@ th {
 
 .screen-1 .footer {
     display: flex;
-    font-size: 0.7em;
-    color: #5e5e5e;
-    gap: 14em;
+    font-size: 0.8em;
+    color: black;
+    gap: 10em;
     padding-bottom: 10em;
 }
 
@@ -578,6 +578,13 @@ button {
     grid-auto-rows: minmax(100px, auto);
 }
 
+.carta {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 8rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+
 .pizza {
     display: block;
     justify-content: center !important;
@@ -592,3 +599,13 @@ button {
     margin-left: 17%;
     margin-top: 3%;
 }
+
+.btn-pedir {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top: 1%;
+}
+
