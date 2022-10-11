@@ -338,15 +338,16 @@ footer {
     background: none;
     border: none;
     border-bottom: 1px solid #666;
-    color: #ddd;
+    color: white;
     font-size: 14px;
     text-transform: uppercase;
     outline: none;
     transition: border-color .2s;
+
 }
 
 .app-form-control::placeholder {
-    color: #666;
+    color: #fff;
 }
 
 .app-form-control:focus {
