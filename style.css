@@ -205,7 +205,7 @@ footer {
 
 .container {
     flex: 0 1 700px;
-    margin-top: 7%;
+    margin-top: 2%;
     margin-left: 30%;
     padding: 10px;
 }
@@ -565,3 +565,30 @@ button {
 }
 
 /*Fin Login */
+
+.center {
+    text-align: center !important;
+    align-self: center !important;
+}
+
+.carta {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 8rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.pizza {
+    display: block;
+    justify-content: center !important;
+}
+
+.btn-comprar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-left: 17%;
+    margin-top: 3%;
+}
