@@ -8,6 +8,10 @@
     <title>IL·NONNO - Carta</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9ddb4510e0.js" crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,70 +24,96 @@
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <div class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="carta.html"><b>Nuestra Carta</b></a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a id="login" href="login.html">Login</a></li>
+                <li><a class="btn" href="index.html">Inicio</a></li>
+                <li><a class="btn" href="carta.html"><b>Nuestra Carta</b></a></li>
+                <li><a class="btn" href="historia.html">Historia</a></li>
+                <li><a class="btn" href="contacto.html">Contacto</a></li>
+                <li><a class="btn" id="login" href="login.html">Login</a></li>
                 <!--<li><a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>-->
             </div>
         </ul>
     </nav>
 
-        <h1 class="center">La Carta</h1>
-        <div class="carta">
-            
-            <div class="pizza">
-                <p class="center">Pizza Kebab</p>
-                <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIKE.png" alt="">
-                <p class="center">Precio: 9.50€</p>
-                <button class="center btn-comprar">Añadir al carrito</button>
+    <h1 class="center">La Carta</h1>
+    <div class="container d-inline-flex">
+        <div class="row">
+
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIKE.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Kebab</h5>
+                <p class="card-text">9.50€</p>
+                <a href="#" class="btn btn-primary bg-dark">Comprar</a>
             </div>
-            <div class="pizza">
-                <p class="center">Pizza Mexicano</p>
-                <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PITM.png" alt="">
-                <p class="center">Precio: 10€</p>
-                <button class="center btn-comprar">Añadir al carrito</button>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PITM.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Mexicana</h5>
+                <p class="card-text">10€</p>
+                <a href="#" class="btn btn-primary bg-dark">Comprar</a>
             </div>
-            <div class="pizza">
-                <p class="center">Pizza Jamon y Queso</p>
-                <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIPDF.png" alt="">
-                <p class="center">Precio: 9€</p>
-                <button class="center btn-comprar">Añadir al carrito</button>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIPDF.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Jamón y Queso</h5>
+                <p class="card-text">9€</p>
+                <a href="#" class="btn btn-primary bg-dark">Comprar</a>
             </div>
-            <div class="pizza">
-                <p class="center">Pizza Rustica</p>
-                <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIRU.png" alt="">
-                <p class="center">Precio: 12€</p>
-                <button class="center btn-comprar">Añadir al carrito</button>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIRU.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Rústica</h5>
+                <p class="card-text">12€</p>
+                <a href="#" class="btn btn-primary bg-dark">Comprar</a>
             </div>
-            <div class="pizza">
-                <p class="center">Pizza Atún</p>
-                <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PITO.png" alt="">
-                <p class="center">Precio: 9.50€</p>
-                <button class="center btn-comprar">Añadir al carrito</button>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PITO.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Atún</h5>
+                <p class="card-text">9.50€</p>
+                <a href="#" class="btn btn-primary bg-dark">Comprar</a>
             </div>
-            <div class="pizza">
-                <p class="center">Pizza Diavola</p>
-                <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIDI.png" alt="">
-                <p class="center">Precio: 10€</p>
-                <button class="center btn-comprar">Añadir al carrito</button>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIDI.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Diavola</h5>
+                <p class="card-text">10€</p>
+                <a href="#" class="btn btn-primary bg-dark">Comprar</a>
             </div>
-            <div class="pizza">
-                <p class="center">Pizza Parmesana</p>
-                <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIPA.png" alt="">
-                <p class="center">Precio: 9€</p>
-                <button class="center btn-comprar">Añadir al carrito</button>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIPA.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Parmesana</h5>
+                <p class="card-text">9€</p>
+                <a href="#" class="btn btn-primary bg-dark">Comprar</a>
             </div>
-            <div class="pizza">
-                <p class="center">Pizza 4 Quesos</p>
-                <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIFO.png" alt="">
-                <p class="center">Precio: 10€</p>
-                <button class="center btn-comprar">Añadir al carrito</button>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIFO.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pizza 4 Quesos</h5>
+                <p class="card-text">10€</p>
+                <a href="#" class="btn btn-primary bg-dark">Comprar</a>
             </div>
         </div>
     </div>
-    
+</div>
+
 
 
 
@@ -104,5 +134,10 @@
 
 
 </body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+</script>
 
 </html>

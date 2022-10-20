@@ -8,7 +8,11 @@
     <title>IL·NONNO - Inicio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9ddb4510e0.js" crossorigin="anonymous"></script>
+
     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 
 </head>
 
@@ -22,80 +26,118 @@
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <div class="menu">
-                <li><a href="index.html"><b>Inicio</b></a></li>
-                        <li><a href="carta.html">Nuestra Carta</a></li>
-                        <li><a href="historia.html">Historia</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a id="login" href="login.html">Login</a></li>
-                        <!--<li><a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>-->
+                <li><a class="btn" href="index.html"><b>Inicio</b></a></li>
+                <li><a class="btn" href="carta.html">Nuestra Carta</a></li>
+                <li><a class="btn" href="historia.html">Historia</a></li>
+                <li><a class="btn" href="contacto.html">Contacto</a></li>
+                <li><a class="btn" id="login" href="login.html">Login</a></li>
+                <!--<li><a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>-->
             </div>
         </ul>
     </nav>
 
-    <div>
-        <img src="./assets/banner.png" width="100%" alt="">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/banner.png" class="d-block w-100" alt="Pizza">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/banner.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/banner.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
     <div class="div-historia">
         <h2 style="margin-bottom: 2%;">Nuestros Comienzos</h2>
-        <p class="texto-historia">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo modi magni molestiae nemo earum mollitia
+        <p class="texto-historia">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo modi magni molestiae
+            nemo earum mollitia
             aspernatur rem recusandae qui similique, illum sint eos repudiandae. Et fuga earum tenetur voluptatibus
             ullam! Quasi vero doloribus laudantium aliquam? Rem sapiente neque, omnis quidem iste nemo enim dignissimos
             dicta odio, iusto possimus nobis non excepturi facilis, odit tempore error ab? Culpa similique quas
             voluptatem, velit ducimus error et possimus. Debitis itaque, eius architecto facilis, inventore, aspernatur
             adipisci vel dolore ducimus nisi labore expedita excepturi fuga. Vitae laborum sit nulla obcaecati quisquam
-            ullam enim, nam ipsum perferendis earum deserunt, iusto esse, vel debitis temporibus tempore.</p> 
+            ullam enim, nam ipsum perferendis earum deserunt, iusto esse, vel debitis temporibus tempore.</p>
     </div>
     <div class="texto-historia">
-    <h2>Como vas a pedir?</h2>
-    <button class="center btn-pedir">Recoger</button>
-    <button class="center btn-pedir">Domicilio</button>
+        <h2>Como vas a pedir?</h2>
+        <button class="center btn-pedir">Recoger</button>
+        <button class="center btn-pedir">Domicilio</button>
     </div>
     <div class="carta">
         <div class="pizza">
             <p class="center">Pizza Kebab</p>
-            <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIKE.png" alt="">
+            <img width="200px"
+                src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIKE.png"
+                alt="">
             <p class="center">Precio: 9.50€</p>
             <button class="center btn-comprar">Añadir al carrito</button>
         </div>
         <div class="pizza">
             <p class="center">Pizza Mexicano</p>
-            <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PITM.png" alt="">
+            <img width="200px"
+                src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PITM.png"
+                alt="">
             <p class="center">Precio: 10€</p>
             <button class="center btn-comprar">Añadir al carrito</button>
         </div>
         <div class="pizza">
             <p class="center">Pizza Jamon y Queso</p>
-            <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIPDF.png" alt="">
+            <img width="200px"
+                src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIPDF.png"
+                alt="">
             <p class="center">Precio: 9€</p>
             <button class="center btn-comprar">Añadir al carrito</button>
         </div>
         <div class="pizza">
             <p class="center">Pizza Rustica</p>
-            <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIRU.png" alt="">
+            <img width="200px"
+                src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIRU.png"
+                alt="">
             <p class="center">Precio: 12€</p>
             <button class="center btn-comprar">Añadir al carrito</button>
         </div>
         <div class="pizza">
             <p class="center">Pizza Atún</p>
-            <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PITO.png" alt="">
+            <img width="200px"
+                src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PITO.png"
+                alt="">
             <p class="center">Precio: 9.50€</p>
             <button class="center btn-comprar">Añadir al carrito</button>
         </div>
         <div class="pizza">
             <p class="center">Pizza Diavola</p>
-            <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIDI.png" alt="">
+            <img width="200px"
+                src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIDI.png"
+                alt="">
             <p class="center">Precio: 10€</p>
             <button class="center btn-comprar">Añadir al carrito</button>
         </div>
         <div class="pizza">
             <p class="center">Pizza Parmesana</p>
-            <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIPA.png" alt="">
+            <img width="200px"
+                src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIPA.png"
+                alt="">
             <p class="center">Precio: 9€</p>
             <button class="center btn-comprar">Añadir al carrito</button>
         </div>
         <div class="pizza">
             <p class="center">Pizza 4 Quesos</p>
-            <img width="200px" src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIFO.png" alt="">
+            <img width="200px"
+                src="https://sources-01.s3.eu-west-3.amazonaws.com/produccion/recursos/846/imagenes/fotos/articulos/PIFO.png"
+                alt="">
             <p class="center">Precio: 10€</p>
             <button class="center btn-comprar">Añadir al carrito</button>
         </div>
