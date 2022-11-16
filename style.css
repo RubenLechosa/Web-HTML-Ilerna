@@ -428,10 +428,10 @@ th {
 /*Historia*/
 
 .div-historia {
-    width: 70%;
-    padding: 5%;
-    margin-left: 15%;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .texto-historia {
